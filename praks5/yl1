@@ -1,11 +1,11 @@
 #!/bin/bash
 #10 numbri valja printimine ritta komaga ja viimane ilma komata
 
-for ((i=0; i<=10; i++))
+summa=0
+for i in {1..10}
 do
-	if [ $i -eq 10 ] ; then
-		echo $i
-	else
-	echo -n "$i, "
-	fi
+	echo -n $i
+	summa=$(($summa+$i))
 done
+echo
+echo "$i arvude summa on: $summa"
