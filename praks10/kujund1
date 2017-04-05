@@ -4,5 +4,13 @@
 #
 for((r=1; r<6; r++))
 do
-	echo $r
+	# trükime reanumbri ilma reavahetuseta
+	echo -n "$r "
+	for((v=1; v<=$r; v++))
+	do
+		# tärnid
+		echo -n  "* "
+	done
+	# kui rida loppeb - reavahetus
+	echo
 done
