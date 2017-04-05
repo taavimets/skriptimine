@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# kolmnurk
+#
+for((r=1; r<7; r++))
+do
+	# trükime reanumbri ilma reavahetuseta
+	echo -n "$r "
+	for((v=1; v<$((6-$r+1)); v++))
+	do
+		# tärnid
+		echo -n  "* "
+	done
+	#tapid
+	for ((v=1; v<$r; v++))
+	do
+		echo -n "o "
+	done
+	# plussid
+	for ((v=1; v<$(($r+1)); v++))
+	do
+		echo -n "+ "
+	done
+	# kui rida loppeb - reavahetus
+	echo
+done
