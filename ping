@@ -1,9 +1,14 @@
 #!/bin/bash
-#pingimine IP_range 172.23.13.20-172.23.13.40
+#pingimine IP_range 172.23.13.20-172.23.13.50
+echo "IP vahemiku algus:"
+read algus;
+echo "IP vahemiku lopp:"
+read lopp;
 
-for ip in 172.23.13.{20..40}
+for (( nr=$algus ; nr<=$lopp ; nr++ ))
 do
-	ping -c 2 $ip > /dev/null
+	ip="172.23.13.$nr"
+	ping -c 1 $ip > /dev/null
 	if [ $? -eq 0 ]; then
 		echo "$ip - OK"
 	else
