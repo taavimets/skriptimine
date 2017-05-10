@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# tervitab sisselogitud kasutajat
+# taavi mets, tervitab sisselogitud kasutajat
 user=`whoami`
 echo "Tere, $user!"
 # valjastab kuupaeva ja kella aja
