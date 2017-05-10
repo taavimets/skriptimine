@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# tervitab sisselogitud kasutajat
+user=`whoami`
+echo "Tere, $user!"
+# valjastab kuupaeva ja kella aja
+kuupaev=`date +"%d.%m.%y"`
+kell=`date +'%H:%M'`
+echo "tana on $kuupaev kell $kell"
+# valjastab kalendri
+cal
+
+
