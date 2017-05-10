@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# taavi mets, roopkuliku skript
+#
+echo -e "Sisesta ridade arv: "
+read ridade_arv
+for ((r=$ridade_arv r>0; r--))
+do
+	for ((t=1; t<=$r; t++))
+	do
+		echo -n "* "
+	done
+	for ((t=1; t<=$(($ridade_arv)); t++))
+	do
+		echo -n "* "
+	done
+done
