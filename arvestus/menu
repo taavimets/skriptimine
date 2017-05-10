@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# taavi mets, menu skript mis valjastab erinevad menuud
+#
+echo "1) steak and potatoes"
+echo "2) fish and chips"
+echo "3) soup and salad"
+
+echo -e "please make a selection: "
+read selection
+if [ $selection -eq 1 ]; then
+	echo "Stick to your ribs."
+	echo "Watch your cholesterol."
+	echo "Enjoy your meal!"
+elif [ $selection -eq 2 ]; then
+	echo "British are coming!"
+	echo "Enjoy your meal!"
+elif [ $selection -eq 3 ]; then
+	echo "Health foods..."
+	echo "dieting is so boring."
+	echo "Enjoy your meal!"
+else
+	echo " vaartus puudub"
+fi
